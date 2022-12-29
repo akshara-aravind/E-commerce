@@ -13,8 +13,7 @@ export const Products=()=>{
         <h3>Bottle</h3>
         <div >bottle Description</div><br/>
         <div>Price:<b>$310</b></div><br/>
-        <div>Instock</div>
-        <br/>
+        <div>Instock</div><br/>
         <button className='AddToCartBtn'>Add to cart</button>
         </div>
         </div>

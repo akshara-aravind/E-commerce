@@ -2,10 +2,14 @@ import {Routes,Route} from 'react-router-dom'
 import {Home} from './components/Home'
 import {Products} from './components/Products'
 import {NavBar} from './components/NavBar'
+import { QueryClientProvider, QueryClient } from 'react-query'
+import { ReactQueryDevtools } from 'react-query/devtools'
 import './App.css';
+const queryClient = new QueryClient
 
 function App() {
   return (
+    <QueryClientProvider client={queryClient}>
     <div>
     <nav>
     <NavBar/>
@@ -15,6 +19,8 @@ function App() {
     <Route path='products/:id' element={<Products/>}/>
     </Routes>
     </div>
+    <ReactQueryDevtools initialIsOpen={false} position='bottom-right' />
+    </QueryClientProvider>
   );
 }
 
