@@ -21,46 +21,49 @@ nav a.active {
   padding: 6px;
   float: right;
 }
-
-
-
-.BottlesList {
-  /* border:4px solid black;  */
-  box-shadow: 0 0 5px 2px #ccc ;
+.ProductList {
+  box-shadow: 0 0 5px 2px #ccc;
   margin: 10px 0px;
   width: 32%;
-  height: 33%;
 }
-.BottlesList:hover{
-  /* border:4px solid black; */
-  cursor:pointer;
+.ProductList:hover {
+  cursor: pointer;
 }
-
-.BottlesList img {
+.ProductList img {
   width: 100%;
+  height:100%;
 }
-
 .Product {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
 }
-
 .BottleText {
   text-align: center;
 }
-.ProductPage{
-  display:flex;
-  padding:30px;
+.ProductPage {
+  display: flex;
+  /* padding: 10px; */
+  /* border: 2px solid black; */
 }
-.ProductImage{
-  width:50%;
+.ProductImage {
+  width: 40%;
+  /* border: 2px solid black; */
 }
-.ProductDescription{
-  width:50%;
+.ProductImage img{
+  /* border: 2px solid black; */
+  width:100%;
+  /* padding: 5px; */
 }
-.AddToCartBtn{
+
+.ProductDescription {
+  width: 60%;
+  /* border: 2px solid black; */
+  padding: 0px 0px 0px 30px ;
+}
+
+.AddToCartBtn {
   background-color: blue;
   color: white;
   border: 0px solid black;

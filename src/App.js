@@ -3,7 +3,7 @@ import {Home} from './components/Home'
 import {Products} from './components/Products'
 import {NavBar} from './components/NavBar'
 import { QueryClientProvider, QueryClient } from 'react-query'
-import { ReactQueryDevtools } from 'react-query/devtools'
+// import { ReactQueryDevtools } from 'react-query/devtools'
 import './App.css';
 const queryClient = new QueryClient
 
@@ -19,7 +19,7 @@ function App() {
     <Route path='products/:id' element={<Products/>}/>
     </Routes>
     </div>
-    <ReactQueryDevtools initialIsOpen={false} position='bottom-right' />
+   
     </QueryClientProvider>
   );
 }
