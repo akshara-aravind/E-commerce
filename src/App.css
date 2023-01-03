@@ -46,14 +46,18 @@ nav a.active {
   display: flex;
   /* padding: 10px; */
   /* border: 2px solid black; */
+  height: 100%;
 }
 .ProductImage {
   width: 40%;
   /* border: 2px solid black; */
+  /* height:500px; */
 }
 .ProductImage img{
   /* border: 2px solid black; */
+  
   width:100%;
+  height:100%;
   /* padding: 5px; */
 }
 
@@ -68,4 +72,14 @@ nav a.active {
   color: white;
   border: 0px solid black;
   padding: 6px;
+}
+.variantImage{
+  width:50%;
+  /* height: */
+}
+.variantImage button{
+  border: 2px solid black;
+  padding:5px;
+  width:100px;
+  margin:5px;
 }
