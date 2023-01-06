@@ -80,7 +80,7 @@ export const Products = () => {
                     <div>
                         <button onClick={decreaseQuantity}>-</button>
                         {Items[index].cartQuantity}
-                        {Items[index].cartQuantity < data?.data.quantity && <button onClick={increaseQuantity}>+</button>}
+                        {Items[index].cartQuantity < data.quantity && <button onClick={increaseQuantity}>+</button>}
                     </div> :
                     <div>
                         <button className='AddToCartBtn' onClick={handleOnClick}>Add to cart</button>
